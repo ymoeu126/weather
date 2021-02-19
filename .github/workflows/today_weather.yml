@@ -7,7 +7,7 @@ on:
   push:
     branches: [ main ]
   schedule:
-    - cron: 0 23 * * *
+    - cron: 0 22 * * *
 
 
 
@@ -31,4 +31,4 @@ jobs:
         run: pip install requests
         # 运行脚本
       - name: 'Working'
-        run: python ./today_weater.py
+        run: python ./today_weather.py
