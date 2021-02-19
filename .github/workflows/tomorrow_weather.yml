@@ -31,5 +31,4 @@ jobs:
         run: pip install requests
         # 运行脚本
       - name: 'Working'
-        e
         run: python tomorrow_weather.py
