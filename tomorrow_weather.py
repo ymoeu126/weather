@@ -19,7 +19,12 @@ def CoolPush(info): #CoolPush酷推
     # cpurl = 'https://push.xuthus.cc/send/' + SKey  # 推送到个人QQ
     api='https://push.xuthus.cc/send/{}'.format(SKey)
     print(info)
-    requests.post(api, info.encode('utf-8'))
+    tomorrow_response = requests.post(api, info.encode('utf-8'))
+    if tomorrow_response.status_code == 200:
+        print(f"tomorrow推送通知success")
+    else:
+        print(f"tomorrow推送通知fail")
+
 def main():
     try:
         api = 'http://t.weather.itboy.net/api/weather/city/'             #API地址，必须配合城市代码使用
