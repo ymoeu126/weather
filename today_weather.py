@@ -5,7 +5,7 @@ import requests, json
 import os
 import re
 
-SKey="5355a061d796917221344e5c46c04710" #CoolPush酷推KEY
+SKey="8e4d8db8c9870ffb5569e98febcc3a12" #CoolPush酷推KEY
 def get_iciba_everyday():
     icbapi = 'http://open.iciba.com/dsapi/'
     eed = requests.get(icbapi)
@@ -25,6 +25,7 @@ def main():
         api = 'http://t.weather.itboy.net/api/weather/city/'             #API地址，必须配合城市代码使用
         city_code = '101241101'   #进入https://where.heweather.com/index.html查询你的城市代码
         #永川代码：101040200
+        #鹰潭代码：101241101
         tqurl = api + city_code
         response = requests.get(tqurl)
         d = response.json()         #将数据以json形式返回，这个d就是返回的json数据
