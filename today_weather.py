@@ -23,7 +23,7 @@ def CoolPush(info): #CoolPush酷推
 def main():
     try:
         api = 'http://t.weather.itboy.net/api/weather/city/'             #API地址，必须配合城市代码使用
-        city_code = '101241101'   #进入https://where.heweather.com/index.html查询你的城市代码
+        city_code = '101040200'   #进入https://where.heweather.com/index.html查询你的城市代码
         #永川代码：101040200
         #鹰潭代码：101241101
         tqurl = api + city_code
